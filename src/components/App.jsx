@@ -79,9 +79,9 @@ export class App extends React.Component {
 
   // adding remove
 
-  handleDeleteContact = id => {
+  handleDeleteContact = name => {
     this.setState(prevState => ({
-      contacts: prevState.contacts.filter(contact => contact.id !== id),
+      contacts: prevState.contacts.filter(contact => contact.name !== name),
     }));
   }
   
